@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zabawa z liczbami</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontener">
+        <div class="jeden">
+            <img src="baner.png" width="800px">
+        </div>
+        <div class="dwa">
+            <ol>
+                <a href="index.html"><li>proste działania</li></a>
+                <a href="index.html"><li>potęgowanie</li></a>
+            </ol>
+        </div>
+        <div class="trzy">
+            <h1><b>PROSTE DZIAŁANIA</b></h1>
+    
+            <i>Podaj pierwszą liczbę: </i> <input type="number" id="number1"> <br>
+            <i>Podaj drugą liczbę: </i> <input type="number" id="number2">
+    
+            <p>
+                <button onclick="dodawanie();">DODAWANIE</button>
+                <button onclick="odejmowanie();">ODEJMOWANIE</button>
+                <button onclick="mnożenie();">MNOŻENIE</button>
+                <button onclick="dzielenie();">DZIELENIE</button>
+            </p>
+
+            <p id="wynik">Nie wolno dzielić przez zero</p>
+
+            <script>
+
+            function dodawanie(){
+            const a = parseFloat(document.getElementById("number1").value);
+            const b = parseFloat(document.getElementById("number2").value);
+            const wynik = document.getElementById("wynik");
+            
+            let wynik2 = a + b;
+            wynik.innerHTML = wynik2;
+            }
+
+            function odejmowanie(){
+            const a = parseFloat(document.getElementById("number1").value);
+            const b = parseFloat(document.getElementById("number2").value);
+            const wynik = document.getElementById("wynik");
+            
+            let wynik2 = a - b;
+            wynik.innerHTML = wynik2;
+            }
+
+            function mnożenie(){
+            const a = parseFloat(document.getElementById("number1").value);
+            const b = parseFloat(document.getElementById("number2").value);
+            const wynik = document.getElementById("wynik");
+            
+            let wynik2 = a * b;
+            wynik.innerHTML = wynik2;
+            }
+
+            function dzielenie(){
+            const a = parseFloat(document.getElementById("number1").value);
+            const b = parseFloat(document.getElementById("number2").value);
+            const wynik = document.getElementById("wynik");
+            
+            let wynik2 = a / b;
+            wynik.innerHTML = wynik2;
+            }
+
+            </script>
+        </div>
+    </div>
+</body>
+</html>

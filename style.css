@@ -1,0 +1,22 @@
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+.kontener {
+width: 800px;
+height: 500px;
+margin: auto;
+}
+.jeden {
+    width: 800px;
+    margin: auto;
+}
+
+.dwa {
+    width: 100px;
+    float: left;  
+}
+
+.trzy {
+    width: 600px;
+    float: right;
+}
